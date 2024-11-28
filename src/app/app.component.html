@@ -1,0 +1,21 @@
+<body id="page-top">
+    <div id="wrapper">
+      <app-side-bar class="navbar sidebar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark fixed" *ngIf="!isLoginOrRegisterRoute()"></app-side-bar>
+      <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+          <app-top-bar  *ngIf="!isLoginOrRegisterRoute()"></app-top-bar>
+        
+  
+          <!-- The main content will be rendered here -->
+          <router-outlet></router-outlet>
+        </div>
+        <app-footer *ngIf="!isLoginOrRegisterRoute()"></app-footer>
+      </div>
+  
+      <!-- Scroll to top button -->
+      <a class="border rounded d-inline scroll-to-top" (click)="scrollToTop()">
+        <i class="fas fa-angle-up"></i>
+      </a>
+    </div>
+  </body>
+  

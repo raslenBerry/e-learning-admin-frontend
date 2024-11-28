@@ -1,0 +1,21 @@
+/* Make sure the sidebar stays fixed on the page */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    background-color: #007bff; /* Blue background for the sidebar */
+  }
+
+  body {
+    margin-top: 71.5px;
+  }
+  
+ 
+  
+  /* Optional: If you want to control the scrollable area of the main content */
+  #content-wrapper {
+    margin-left: 225px; /* Adjust depending on sidebar width */
+  }
+  
