@@ -1,0 +1,13 @@
+.course-image {
+    width: 40px; /* Adjust this width to your preferred size */
+    height: 40px;
+  }
+  
+  .text-success {
+    color: green;
+  }
+  
+  .text-warning {
+    color: yellow;
+  }
+  
