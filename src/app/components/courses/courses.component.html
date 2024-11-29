@@ -27,8 +27,8 @@
                 <td>
                   <span
                     [ngClass]="{
-                      'text-success': course.accepted === 'Accepted',
-                      'text-warning': course.accepted === 'Pending'
+                      'text-success': course.accepted === 'OUI',
+                      'text-warning': course.accepted === 'NON'
                     }"
                   >
                     {{ course.accepted }}
@@ -36,7 +36,7 @@
                 </td>
                 <td>
                   <button
-                    *ngIf="course.accepted === 'Pending'"
+                    *ngIf="course.accepted === 'NON'"
                     class="btn btn-primary btn-sm"
                     (click)="acceptCourse(course.courseId)"
                   >
