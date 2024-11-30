@@ -11,17 +11,16 @@ import { StudentsComponent } from './components/students/students.component';
 import { TrainersComponent } from './components/trainers/trainers.component';
 
 const routes: Routes = [
-{path: '', redirectTo: '/dashbord', pathMatch: 'full'},
+{path: '', redirectTo: '/login', pathMatch: 'full'},
 {path: 'dashbord', component: DashbordComponent},
 {path: 'login', component: LoginComponent},
-{path: 'register', component: RegisterComponent},
 {path: 'table', component: TableComponent},
 {path: 'courses', component: CoursesComponent},
 {path: 'students', component: StudentsComponent},
 {path: 'trainers', component: TrainersComponent},
 {path: 'profile', component: ProfileComponent},
 {path: 'forgot-password', component: ForgotPasswordComponent},
-{path: '**', redirectTo: '/dashbord', pathMatch: 'full'}
+{path: '**', redirectTo: '/login', pathMatch: 'full'}
 
 
 ];
