@@ -27,15 +27,15 @@
             "styles": [
               "src/styles.css",
               "src/assets/bootstrap/css/bootstrap.min.css",
-  "src/assets/css/Nunito.css",
-  "src/assets/fonts/fontawesome-all.min.css"
+              "src/assets/css/Nunito.css",
+              "src/assets/fonts/fontawesome-all.min.css"
             ],
             "scripts": [  
-             "src/assets/bootstrap/js/bootstrap.min.js",
-  "src/assets/js/chart.min.js",
-  "src/assets/js/bs-init.js",
-  "src/assets/js/theme.js"
-          ]
+              "src/assets/bootstrap/js/bootstrap.min.js",
+              "src/assets/js/chart.min.js",
+              "src/assets/js/bs-init.js",
+              "src/assets/js/theme.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -66,6 +66,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 4300
+          },
           "configurations": {
             "production": {
               "browserTarget": "admin:build:production"
